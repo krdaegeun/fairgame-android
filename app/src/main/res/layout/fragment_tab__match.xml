@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tab.Tab_Match">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tab_f_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/mToolbarTheme">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Match"
+                android:textColor="@color/colorMain"
+                android:textSize="20sp"
+                />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tab_f_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tab_f_toolbar"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</FrameLayout>

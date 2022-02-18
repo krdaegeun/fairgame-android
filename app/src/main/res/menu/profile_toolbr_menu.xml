@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/pf_menu_logout"
+        android:title="Log out"
+        android:textStyle="bold"
+        android:enabled="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pf_menu_change_state"
+        android:title="Change state"
+        android:enabled="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pf_menu_change_username"
+        android:title="Change username"
+        android:textStyle="bold"
+        android:enabled="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pf_menu_change_pw"
+        android:title="Change password"
+        android:enabled="true"
+        app:showAsAction="never" />
+
+
+</menu>

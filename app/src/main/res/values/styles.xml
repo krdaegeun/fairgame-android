@@ -1,0 +1,41 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorMainLight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="mToolbarTheme" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:textColor">@color/colorMain</item>
+        <item name="android:textColorPrimary">@color/colorMain</item>
+        <item name="android:textColorSecondary">@color/colorMain</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorMain</item>
+    </style>
+
+    <style name="mProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorSecondary">@color/Black</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="colorPrimaryDark">@color/colorMain</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#808080</item>
+        <item name="colorControlActivated">#F7DC10</item>
+    </style>
+
+
+
+
+</resources>

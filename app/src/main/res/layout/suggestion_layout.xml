@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/suggestion_linear"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:weightSum="10">
+
+        <TextView
+            android:paddingTop="2.5dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="2.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Username"
+            android:layout_weight="1"
+            android:id="@+id/txt_suggest_keyword"
+            android:textSize="20dp"
+            android:textColor="#808080"
+             />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:src="@drawable/ic_add" />
+
+    </LinearLayout>

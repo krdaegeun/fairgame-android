@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/team_toolbar"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/mToolbarTheme"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:textStyle="bold"
+            android:textColor="@color/colorMain"
+            android:textSize="24sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/team_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/team_toolbar"
+        android:layout_above="@id/team_bottom_ll"
+        android:weightSum="2">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/team_left_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+
+            app:spanCount="1">
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/team_right_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+
+            app:spanCount="1">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/team_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/team_btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="play"
+            android:background="@color/colorMainLight"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tab.Tab_Ranking">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tab_r_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/mToolbarTheme">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Ranking"
+                android:textColor="@color/colorMain"
+                android:textSize="20sp"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyler_view_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tab_r_toolbar"
+            android:layout_above="@+id/tab_r_bot_ll"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/tab_r_bot_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorMainLight"
+            android:weightSum="7"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tab_r_mRanking"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="1"
+                android:maxLines="3"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/tab_r_mUsername"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="4"
+                android:maxLines="1"
+                android:text="Username" />
+
+
+            <RatingBar
+                android:id="@+id/tab_r_mRating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_gravity="center"
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:isIndicator="true"
+                android:max="5"
+                android:theme="@style/RatingBar"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

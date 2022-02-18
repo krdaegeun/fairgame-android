@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/signup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/mToolbarTheme"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+
+            android:textColor="@color/colorMain"
+            android:textSize="24sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/signup_toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/signup_et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="16dp"
+                android:inputType="text"
+                android:hint="Username"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+
+                android:maxLines="1"
+                android:cursorVisible="false"
+                />
+
+
+            <EditText
+                android:id="@+id/signup_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginBottom="8dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:maxLines="1"
+                android:cursorVisible="false"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How long have you played football?"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/signup_rg_exp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/signup_rd_exp_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 ~ 2 years"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_exp_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 ~ 4 years"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_exp_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;5 years"
+                    android:textSize="16sp"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How often do you play in a month?"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/signup_rg_often"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/signup_rd_often_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;=2 times"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_often_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 ~ 6 times"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_often_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;6 times"
+                    android:textSize="16sp"
+                    />
+            </RadioGroup>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which one are you more confident with?"
+
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/signup_rg_position"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/signup_rd_position_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attack"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_position_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Defence"
+                    android:textSize="16sp"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which level do you think you are in football?"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                />
+
+
+            <RadioGroup
+                android:id="@+id/signup_rg_level"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/signup_rd_level_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poor"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_level_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fair"
+                    android:textSize="16sp"
+                    />
+                <RadioButton
+                    android:id="@+id/signup_rd_level_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+                    android:textSize="16sp"
+                    />
+            </RadioGroup>
+
+
+
+            <Button
+                android:id="@+id/signup_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="create account"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorMainLight"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
