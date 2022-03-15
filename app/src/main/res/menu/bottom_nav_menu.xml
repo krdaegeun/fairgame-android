@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:textStyle="bold"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ranking"
+        android:title="Ranking"
+        android:textStyle="bold"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_ranking"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_match"
+        android:title="Match"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_feedback"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_profile"
+        android:textStyle="bold"
+        app:showAsAction="never" />
+</menu>

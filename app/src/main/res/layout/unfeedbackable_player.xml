@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/unfeed_tv_username"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight= "4"
+        android:text="Username"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:text="ATK"
+        android:textSize="16sp"/>
+
+    <RatingBar
+        android:id="@+id/unfeed_rb_atk"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_gravity="center"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:max="5"
+        android:theme="@style/RatingBar"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:text="DEF"
+        android:textSize="16sp"/>
+
+    <RatingBar
+        android:id="@+id/unfeed_rb_def"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_gravity="center"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:max="5"
+        android:theme="@style/RatingBar"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+</LinearLayout>

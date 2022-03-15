@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    tools:context=".Activity.DialogActivity">
+
+
+    <TextView
+        android:id="@+id/dialog_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/dialog_rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_tv_type"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/dialog_rb_type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="less than 5vs5"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            />
+        <RadioButton
+            android:id="@+id/dialog_rb_type2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 vs 5"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            />
+        <RadioButton
+            android:id="@+id/dialog_rb_type3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 vs 6"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            />
+
+        <RadioButton
+            android:id="@+id/dialog_rb_type4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 vs 7"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            />
+
+        <RadioButton
+            android:id="@+id/dialog_rb_type5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 vs 8"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dialog_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_below="@+id/dialog_rg_type"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/Black"
+        />
+
+
+</RelativeLayout>
